@@ -24,3 +24,7 @@ decryped = hush.decrypt(encrypted)
 Here's an example storing "wtf" with the password as "password" and total characters as 30:
 
 ![hush](https://us-east-1.tixte.net/uploads/img.dhravya.dev/hushh.png)
+
+### Use cases
+
+I made this mainly to serve as a tool for myself so I can generate and validate API keys to use for my own projects. API keys can have a username encrypted in them which I can use to identify the user. This also eliminates the need for me to store the API keys and passwords in plaintext, only store usernames instead. 
