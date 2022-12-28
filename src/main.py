@@ -21,7 +21,7 @@ class Hushh:
         """
         Generates a unique string based on the provided string and password.
 
-        The password can then be used to decrypt the string.
+        The password can then be used to decipher the string.
         """
 
         returned_pass = ""
@@ -32,7 +32,7 @@ class Hushh:
 
         return self._extend_password(returned_pass)
 
-    def decrypt(self, hushh: str):
+    def decipher(self, hushh: str):
 
         returned = ""
         storage_letter = random.Random(self.key).randint(0, self.total_characters // 2)
@@ -95,7 +95,7 @@ if __name__ == "__main__":
 
     print(f"[yellow]Encrypted[/yellow]: `[blue bold]{encrypted}[/blue bold]`")
 
-    decryped = hushh.decrypt(encrypted)
+    decryped = hushh.decipher(encrypted)
     print("[yellow]Decrypted[/yellow]: ", decryped)
 
     success = sentence == decryped

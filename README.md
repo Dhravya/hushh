@@ -11,7 +11,7 @@ hush = Hushh(key="yousussybaka")
 encrypted = hush.cipher("This is a secret message")
 # ^X'Qm}02zUEH"j!{5J]RnycH_':!'w}X2n3oB<DM224fj}%MCt,;X?JNQW[ffJCT[('XU"f=(E}NcOE]HrFwi?Gn{-AxuOzj!wW|dW|dB d|]s*]-dg]||Br]
 
-decryped = hush.decrypt(encrypted)
+decryped = hush.decipher(encrypted)
 # This is a secret message
 ```
 
